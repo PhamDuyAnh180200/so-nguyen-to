@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let number = +prompt('nhap so luong so can hien thi');
+ let N =2;
+ for (let count =1; count<number;){
+     let check=false;
+     for (let i =2; i<N; i++) {
+         if (N % i === 0) {
+             check = true
+             break
+         }
+     }
+     if (!check ) {
+         count++;
+         document.write(N + "<br>");
+     }
+     N++;
+
+ }
+</script>
+</body>
+</html>
